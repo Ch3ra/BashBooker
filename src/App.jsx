@@ -6,7 +6,10 @@ import Footer from './Global/Footer'
 import Login from './Auth/Login/Login'
 import Register from './Auth/Register/Register'
 import Description from './Pages/Description'
-import form from './Forms/Form'
+import ADD from './Global/Form'
+import Venue from './Pages/Venue'
+import Profile from './Global/Profile'
+
 
 
 
@@ -23,7 +26,9 @@ function App() {
      <Route path='/description' element={<Description/>}/>
      <Route path='/login' element={<Login/>}/>
      <Route path='/register' element={<Register/>}/>
-     <Route path='/form' element={<Form/>}/>
+     <Route path='/form' element={<ADD/>}/>
+     <Route path='/venue' element={<Venue/>}/>
+     <Route path='/profile' element={<Profile/>}/>
      </Routes>
      
      </BrowserRouter>
