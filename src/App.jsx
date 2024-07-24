@@ -1,4 +1,4 @@
-import {BrowserRouter,Routes,Route, Form } from 'react-router-dom'
+import {BrowserRouter,Routes,Route, } from 'react-router-dom'
 import './App.css'
 import Landing from './Pages/Landing'
 import Navbar from './Global/Navbar'
@@ -9,6 +9,7 @@ import Description from './Pages/Description'
 import ADD from './Global/Form'
 import Venue from './Pages/Venue'
 import Profile from './Global/Profile'
+import EditForm from './Global/EditForm'
 
 
 
@@ -23,12 +24,14 @@ function App() {
       <Route path='/' element={<Landing/>}/>
       <Route path='/navbar' element={<Navbar/>}/>
       <Route path='/footer' element={<Footer/>}/>
-     <Route path='/description' element={<Description/>}/>
-     <Route path='/login' element={<Login/>}/>
+      <Route path='/login' element={<Login/>}/>
      <Route path='/register' element={<Register/>}/>
      <Route path='/form' element={<ADD/>}/>
      <Route path='/venue' element={<Venue/>}/>
      <Route path='/profile' element={<Profile/>}/>
+     <Route path='/desc/:id' element={<Description />} />
+      <Route path='/edit/:id' element={<EditForm />} />
+
      </Routes>
      
      </BrowserRouter>

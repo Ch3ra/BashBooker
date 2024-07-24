@@ -5,12 +5,12 @@ import axios from 'axios';
 
 const Login = () => {
   const[data,setData]=useState({
-    email:'',
-    password:''
+    email:"",
+    password:""
   })
 
   const handleChange=(e)=>{
-    const{name,value}=e.target
+    const { name, value} = e.target;
     setData({
       ...data,
         [name]:value
@@ -26,7 +26,9 @@ const Login = () => {
     console.log("triggered")
     const response=await axios.post("https://react30.onrender.com/api/user/login",data)
     if(response.status===200){
+      localStorage.setItem('token', response.data.token)
       nav('/')
+
     }else{
       alert("Please Enter the Correct Email or Password!!")
     }
