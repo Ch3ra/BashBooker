@@ -8,6 +8,8 @@ function Profile() {
   const [isEditing, setIsEditing] = useState(false);
   const toggleEditPopup = () => {
     setIsEditing(!isEditing);
+
+    
   };
 
 
