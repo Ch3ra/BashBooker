@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="flex justify-between px-20 items-center font-semibold">
         <div className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="h-10" />
-          <h1 className="mt-1 text-2xl">Bash Booker</h1>
+          <h1 className="mt-1 text-2xl">BB</h1>
         </div>
         <div className="flex xl:gap-10 md:gap-8 gap-2">
           <NavLink

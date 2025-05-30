@@ -9,6 +9,27 @@ const EditForm = () => {
   const [singleData, setSingleData] = useState({})
 
   const nav = useNavigate();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   const [data, setData] = useState({
     title: "",
     subtitle: "",
@@ -53,6 +74,11 @@ const EditForm = () => {
       console.log("Smoething went wrong while editing");
     }
   };
+
+
+
+
+
 
   const handleEdit = async () => {
     const response = await axios.get(

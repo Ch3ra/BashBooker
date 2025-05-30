@@ -7,11 +7,11 @@ const Footer = () => {
     <div className="text-center">
       <a href="#" className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
         <img src={logo} className="h-12 mr-3 sm:h-9" alt="Landwind Logo" />
-        BashBooker
+        BB
       </a>
 
       <span className="block text-sm text-center text-gray-500 ">
-        © 2024 Bash Booker™. All Rights Reserved. Built By
+        © 2024 BB™. All Rights Reserved. Built By
         <a href="Here will be my protfolio link!!!!!" className="text-black hover:underline ">
           Ch3RaY
         </a>
